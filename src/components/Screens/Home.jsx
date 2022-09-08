@@ -20,10 +20,13 @@ const Home = () => {
             }> Go To SignUp Page </Link> */}
 
             <Link to={`/home2/${name}/walia`} >GO TO HOME 2</Link>
+            <br />
             <Link to={{
                 pathname:'/NewLogin',
                 search: '?name=Kamal&midName=walia'
             }}>Go to New Login</Link>
+<br />
+        <Link to={'/Profile'} >GO TO Profile Screen</Link>
         </div>
         
     )

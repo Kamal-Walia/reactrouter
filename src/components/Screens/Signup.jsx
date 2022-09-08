@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from '../HoC/withRouter';
+import withRouter from '../HoC/withRouter';
 
 
 class Signup extends React.Component{

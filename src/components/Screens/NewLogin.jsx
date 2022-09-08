@@ -1,5 +1,5 @@
 import React from 'react';
-import withRouterNew from '../HoC/withRouterNew';
+import withRouter from '../HoC/withRouter';
 
 class NewLogin extends React.Component{
     render() {
@@ -12,4 +12,4 @@ class NewLogin extends React.Component{
     }
 }
 
-export default withRouterNew(NewLogin)
+export default withRouter(NewLogin)

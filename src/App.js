@@ -7,6 +7,8 @@ import Login from './components/Screens/Login';
 import Signup from './components/Screens/Signup';
 import Home2 from './components/Screens/Home2';
 import NewLogin from './components/Screens/NewLogin';
+import Profile from './components/Screens/Profile';
+import EditProfile from './components/Screens/EditProfile';
 
 function App() {
   return (
@@ -16,9 +18,14 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/Login/:user' element={<Login />} />
-        <Route path='/Signup' element={<Signup fname={'ksks'}/>}/>
+        <Route path='/Signup' element={<Signup />}/>
         <Route path='/home2/:userName/:lastName' element={<Home2 />} />
-        <Route path='/NewLogin' element={<NewLogin />} />
+        <Route path='/NewLogin/' element={<NewLogin />} />
+        <Route path='/Profile' element={<Profile />}>
+          <Route path='edit' element={<EditProfile />} >
+          <Route path='about' element={<About />} />
+          </Route>
+        </Route>
         <Route path='*' element={<Error />} />
       </Routes>
       </BrowserRouter>
